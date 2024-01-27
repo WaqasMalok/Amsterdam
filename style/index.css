@@ -137,19 +137,25 @@
 .mk-bg-dot-footer-section{
 bottom: -20%; 
 }
-.mk-footer-social-icons .fa-brands{
+.mk-footer-social-icons {
+  padding: 40px 0px 20px 0px;
+}
+.mk-footer-social-icons .icon{
 padding: 15px;
 border-radius: 50%;
-background-color: #ffffff10;
-color: #fff;
-font-size: 20px;
-margin: 8px;
-transition: all ease-in-out 0.5s;
-}
-.mk-footer-social-icons .fa-brands:hover{
-background-color: #0359CC; 
-transform: translateY(-5px);
-}
+background-color: #ffffff10;   
+} 
+.mk-footer-social-icons .fa-brands{ 
+  color: #fff;
+  font-size: 20px;
+  transition: all ease-in-out 0.5s;
+  }
+  .mk-footer-social-icons .icon:hover{
+    background-color: #0359CC; 
+  }
+  .mk-footer-social-icons .icon:hover .fa-brands{
+  transform: translateY(-12px);
+  }
 .mk-footer-container{
 border-bottom: 1px solid #ffffff44; 
 }
