@@ -6,9 +6,9 @@
   margin: 0%;
   font-family: "Space Grotesk", sans-serif;
 }
-/* body{
-    
-} */
+.mk-mrbg-130 {
+  margin-bottom: 130px;
+}
 
 .mk-amsterdam {
   background-color: #050a12;
@@ -115,7 +115,31 @@
     transform: translateY(0px);
   }
 }
-
+/* ################################## MK FOLLOW OUR UPDATES SECTION ###########################  */
+.mk-follow .mk-follow-container {
+  border: 1px solid #ffffff3a;
+  border-radius: 12px;
+  background-color: #ffffff10;
+  padding: 90px 45px;
+}
+.mk-follow-title {
+  max-width: 682px ;
+}
+.mk-follow-title h2{
+  font-size: clamp(30px, 10vw, 100px);
+  text-align: left;
+}
+.mk-follow-btns{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mk-follow-btns .btn{
+font-size: 19px;
+margin: 5px 12px;
+text-wrap: nowrap;
+}
 /* ################################## MK FOOTER SECTION ###########################  */
 .mk-footer {
   border-top: 1px solid #1477da63;
