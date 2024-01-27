@@ -12,13 +12,16 @@
   overflow: hidden;
 }
 
-.mk-bg-shadow {
+.mk-bg-dot {
   width: 80%;
-  height: 10%;
+  height: 80%;
+  /* width: 200px;
+  height: 200px; */
   position: absolute;
-  top: -20%;
+  top: -40%;
   z-index: -0;
-  filter: drop-shadow(0px 204px 173px #1477da);
+  /* filter: drop-shadow(0px, 204px, 173px, #1477da); */
+  background-image: radial-gradient(closest-side, #1477da73, #050a12);
 }
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////// */
@@ -76,7 +79,8 @@
   max-width: 76px;
   max-height: 83px;
 }
-.mk-coins .coin-1,
+.mk-coins 
+.coin-1,
 .coin-2,
 .coin-3,
 .coin-4,
