@@ -1,11 +1,10 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
-  /* font-family: 'Space Grotesk', sans-serif;  */
-  /* /////////////// font family    ///////////  */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+/* font-family: 'Space Grotesk', sans-serif;  */
+/* /////////////// font family    ///////////  */
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Space Grotesk', sans-serif; 
+  font-family: "Space Grotesk", sans-serif;
 }
 /* body{
     
@@ -34,9 +33,9 @@
   justify-content: center;
   align-items: end;
 }
-.mk-bg-dot-hero-section{
-    position: absolute;
-    top: -40%;
+.mk-bg-dot-hero-section {
+  position: absolute;
+  top: -40%;
 }
 .mk-hero-content {
   /* border: 2px solid greenyellow; */
@@ -83,8 +82,7 @@
   max-width: 76px;
   max-height: 83px;
 }
-.mk-coins 
-.coin-1,
+.mk-coins .coin-1,
 .coin-2,
 .coin-3,
 .coin-4,
@@ -118,44 +116,43 @@
   }
 }
 
-
 /* ################################## MK FOOTER SECTION ###########################  */
-.mk-footer{
+.mk-footer {
   border-top: 1px solid #1477da63;
 }
-.mk-footer-content{
+.mk-footer-content {
   max-width: 660px;
   padding: 50px 0px 20px 0px;
 }
-.mk-footer-content p{
+.mk-footer-content p {
   font-size: 14px;
-
 }
-.mk-footer-logo{
+.mk-footer-logo {
   width: 214px;
 }
-.mk-bg-dot-footer-section{
-bottom: -20%; 
+.mk-bg-dot-footer-section {
+  bottom: -20%;
 }
 .mk-footer-social-icons {
   padding: 40px 0px 20px 0px;
 }
-.mk-footer-social-icons .icon{
-padding: 15px;
-border-radius: 50%;
-background-color: #ffffff10;   
-} 
-.mk-footer-social-icons .fa-brands{ 
+.mk-footer-social-icons .icon {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #ffffff10;
+  margin: 5px;
+}
+.mk-footer-social-icons .fa-brands {
   color: #fff;
   font-size: 20px;
   transition: all ease-in-out 0.5s;
-  }
-  .mk-footer-social-icons .icon:hover{
-    background-color: #0359CC; 
-  }
-  .mk-footer-social-icons .icon:hover .fa-brands{
+}
+.mk-footer-social-icons .icon:hover {
+  background-color: #0359cc;
+}
+.mk-footer-social-icons .icon:hover .fa-brands {
   transform: translateY(-12px);
-  }
-.mk-footer-container{
-border-bottom: 1px solid #ffffff44; 
+}
+.mk-footer-container {
+  border-bottom: 1px solid #ffffff44;
 }
