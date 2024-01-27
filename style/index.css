@@ -18,10 +18,10 @@
 }
 
 .mk-bg-dot {
-  width: 80%;
-  height: 80%;
+  width: 80vw;
+  height: 80vh;
   z-index: -0;
-  background-image: radial-gradient(closest-side, #1477da63, #050a12);
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
 }
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////// */
@@ -120,7 +120,22 @@
 
 
 /* ################################## MK FOOTER SECTION ###########################  */
-
 .mk-footer{
+  border-top: 1px solid #1477da63;
+}
+.mk-footer-content{
+  max-width: 660px;
+}
+.mk-footer-content p{
+  font-size: 14px;
 
+}
+.mk-footer-logo{
+  width: 214px;
+}
+.mk-bg-dot-footer-section{
+bottom: -20%; 
+}
+.mk-footer-container{
+border-bottom: 1px solid #ffffff44; 
 }
