@@ -1,6 +1,11 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+  /* font-family: 'Space Grotesk', sans-serif;  */
+  /* /////////////// font family    ///////////  */
 * {
   padding: 0%;
   margin: 0%;
+  font-family: 'Space Grotesk', sans-serif; 
 }
 /* body{
     
@@ -15,13 +20,8 @@
 .mk-bg-dot {
   width: 80%;
   height: 80%;
-  /* width: 200px;
-  height: 200px; */
-  position: absolute;
-  top: -40%;
   z-index: -0;
-  /* filter: drop-shadow(0px, 204px, 173px, #1477da); */
-  background-image: radial-gradient(closest-side, #1477da73, #050a12);
+  background-image: radial-gradient(closest-side, #1477da63, #050a12);
 }
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////// */
@@ -34,14 +34,18 @@
   justify-content: center;
   align-items: end;
 }
+.mk-bg-dot-hero-section{
+    position: absolute;
+    top: -40%;
+}
 .mk-hero-content {
   /* border: 2px solid greenyellow; */
-  max-width: 1080px;
+  max-width: 1198px;
   text-align: center;
   z-index: 3;
 }
 .mk-hero-title {
-  font-size: clamp(30px, 6rem, 100px);
+  font-size: clamp(30px, 10vw, 100px);
   margin-bottom: 62px;
 }
 .mk-hero-btn .btn {
@@ -112,4 +116,11 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+
+/* ################################## MK FOOTER SECTION ###########################  */
+
+.mk-footer{
+
 }
