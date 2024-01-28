@@ -137,8 +137,30 @@
 }
 .mk-follow-btns .btn{
 font-size: 19px;
-margin: 5px 12px;
+/* margin: 5px 12px; */
 text-wrap: nowrap;
+}
+@media (max-width: 998px){
+  .mk-follow .mk-follow-container { 
+    padding: 50px 25px;
+  }
+  .mk-follow-title {
+    max-width: 100%; 
+  }
+  .mk-follow-title h2{ 
+    text-align: center;
+  }
+  .mk-follow-btns{
+    text-align: center; 
+  }
+  .mk-follow-btns {
+    align-items: center;
+  }
+  .mk-follow-btns .btn{
+  font-size: 16px;
+  margin: 0px ;
+  text-wrap: nowrap;
+  }
 }
 /* ################################## MK FOOTER SECTION ###########################  */
 .mk-footer {
