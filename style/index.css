@@ -6,6 +6,9 @@
   margin: 0%;
   font-family: "Space Grotesk", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .mk-mrbg-130 {
   margin-bottom: 130px;
 }
@@ -194,6 +197,13 @@
 }
 .mk-faq-accordion .accordion-body{
   padding-left: 57px !important;
+}
+.mk-faq-accordion .accordion-button::after{
+  background-image: url("../icons/icon-plus.svg");
+}
+.accordion-button:not(.collapsed)::after {
+  color: red;
+  transform: none;
 }
 /* MAXIMUM WIDTH 768 PX  */
 @media (max-width: 768px){
