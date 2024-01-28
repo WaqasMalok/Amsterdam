@@ -202,8 +202,8 @@ html{
   background-image: url("../icons/icon-plus.svg");
 }
 .accordion-button:not(.collapsed)::after {
-  color: red;
-  transform: none;
+  background-image: url("../icons/minus.png");
+  
 }
 /* MAXIMUM WIDTH 768 PX  */
 @media (max-width: 768px){
