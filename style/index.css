@@ -37,11 +37,11 @@
   position: absolute;
   top: -40%;
 }
-.mk-hero-content {
-  /* border: 2px solid greenyellow; */
+.mk-hero-content { 
   max-width: 1198px;
   text-align: center;
   z-index: 3;
+  padding: 0px 10px;
 }
 .mk-hero-title {
   font-size: clamp(30px, 10vw, 100px);
@@ -55,32 +55,27 @@
 .mk-coins .coin-1 {
   top: 37%;
   left: 18%;
-  max-width: 163px;
-  max-height: 169px;
+  max-width: 163px; 
 }
 .mk-coins .coin-2 {
   bottom: 1%;
   left: 8%;
-  max-width: 131px;
-  max-height: 136px;
+  max-width: 131px; 
 }
 .mk-coins .coin-3 {
   bottom: -3%;
   right: 13%;
-  max-width: 156px;
-  max-height: 162px;
+  max-width: 156px; 
 }
 .mk-coins .coin-4 {
   top: 25%;
   right: 5%;
-  max-width: 182px;
-  max-height: 189px;
+  max-width: 182px; 
 }
 .mk-coins .coin-5 {
   bottom: 5%;
   right: 9%;
-  max-width: 76px;
-  max-height: 83px;
+  max-width: 76px; 
 }
 .mk-coins .coin-1,
 .coin-2,
@@ -115,6 +110,36 @@
     transform: translateY(0px);
   }
 }
+
+/* RESPONSIVE  */
+@media (max-width: 576px){
+/* ANIMATION COINS  */
+.mk-coins .coin-1 {
+  top: 40%;
+  left: 0%;
+  max-width: 100px;
+}
+.mk-coins .coin-2 {
+  bottom: 11%;
+    left: -1%;
+    max-width: 65px;
+}
+.mk-coins .coin-3 {
+  bottom: 11%;
+  right: 13%;
+  max-width: 100px; 
+}
+.mk-coins .coin-4 {
+  top: 32%;
+    right: 0%;
+    max-width: 170px;
+}
+.mk-coins .coin-5 {
+  bottom: 13%;
+  right: 2%;
+  max-width: 63px;
+}
+}
 /* ################################## MK FOLLOW OUR UPDATES SECTION ###########################  */
 .mk-follow .mk-follow-container {
   border: 1px solid #ffffff3a;
@@ -136,8 +161,7 @@
   justify-content: space-between;
 }
 .mk-follow-btns .btn{
-font-size: 19px;
-/* margin: 5px 12px; */
+font-size: 19px; 
 text-wrap: nowrap;
 }
 @media (max-width: 998px){
@@ -157,11 +181,10 @@ text-wrap: nowrap;
     align-items: center;
   }
   .mk-follow-btns .btn{
-  font-size: 16px;
-  margin: 0px ;
+  font-size: 16px; 
   text-wrap: nowrap;
   }
-}
+} 
 /* ################################## MK FOOTER SECTION ###########################  */
 .mk-footer {
   border-top: 1px solid #1477da63;
