@@ -9,7 +9,7 @@
 .mk-mrbg-130 {
   margin-bottom: 130px;
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .mk-mrbg-130 {
     margin-bottom: 70px;
   }
@@ -41,7 +41,7 @@
   position: absolute;
   top: -40%;
 }
-.mk-hero-content { 
+.mk-hero-content {
   max-width: 1198px;
   text-align: center;
   z-index: 3;
@@ -59,27 +59,27 @@
 .mk-coins .coin-1 {
   top: 37%;
   left: 18%;
-  max-width: 163px; 
+  max-width: 163px;
 }
 .mk-coins .coin-2 {
   bottom: 1%;
   left: 8%;
-  max-width: 131px; 
+  max-width: 131px;
 }
 .mk-coins .coin-3 {
   bottom: -3%;
   right: 13%;
-  max-width: 156px; 
+  max-width: 156px;
 }
 .mk-coins .coin-4 {
   top: 25%;
   right: 5%;
-  max-width: 182px; 
+  max-width: 182px;
 }
 .mk-coins .coin-5 {
   bottom: 5%;
   right: 9%;
-  max-width: 76px; 
+  max-width: 76px;
 }
 .mk-coins .coin-1,
 .coin-2,
@@ -116,55 +116,100 @@
 }
 
 /* RESPONSIVE  */
-@media (max-width: 576px){
-/* ANIMATION COINS  */
-.mk-coins .coin-1 {
-  top: 40%;
-  left: 0%;
-  max-width: 100px;
-}
-.mk-coins .coin-2 {
-  bottom: 11%;
+@media (max-width: 576px) {
+  /* ANIMATION COINS  */
+  .mk-coins .coin-1 {
+    top: 40%;
+    left: 0%;
+    max-width: 100px;
+  }
+  .mk-coins .coin-2 {
+    bottom: 11%;
     left: -1%;
     max-width: 65px;
-}
-.mk-coins .coin-3 {
-  bottom: 11%;
-  right: 13%;
-  max-width: 100px; 
-}
-.mk-coins .coin-4 {
-  top: 32%;
+  }
+  .mk-coins .coin-3 {
+    bottom: 11%;
+    right: 13%;
+    max-width: 100px;
+  }
+  .mk-coins .coin-4 {
+    top: 32%;
     right: 0%;
     max-width: 170px;
-}
-.mk-coins .coin-5 {
-  bottom: 13%;
-  right: 2%;
-  max-width: 63px;
-}
+  }
+  .mk-coins .coin-5 {
+    bottom: 13%;
+    right: 2%;
+    max-width: 63px;
+  }
 }
 /* /////////////////////////////////// FAQS SECTION  //////
 ///////////////////////// */
-
-.mk-faq-container{
+.mk-faq{
+  padding: 40px 10px 10px 10px;
+}
+.mk-faq-container {
   max-width: 900px;
 }
-.mk-faq-header{
-margin-bottom: 60px;
+.mk-faq-header {
+  margin-bottom: 60px;
 }
-.mk-faq-header h1{
+.mk-faq-header h1 {
   font-size: clamp(25px, 4vw, 56px);
 }
-.mk-faq-header img{
+.mk-faq-header img {
   width: 80vw;
- max-width: 536px;
- min-width: 350px;
+  max-width: 536px;
+  min-width: 350px;
 }
-.mk-faq-accordion .accordion-button{
-  background-color: #ffffff27 !important;
+.mk-faq-accordion .accordion-item,
+.accordion-button {
+  background-color: #151921 !important;
 }
+.mk-faq-accordion .accordion-item {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.mk-faq-accordion .accordion-button {
+  font-size: clamp(20px, 2vw, 24px);
+}
+.mk-faq-accordion .accordion-body{
+  font-size: clamp(16px, 2vw, 20px);
 
+}
+.mk-faq-accordion .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.mk-faq-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: 1px solid #ffffff25;
+}
+.mk-faq-accordion .accordion-body{
+  padding-left: 57px !important;
+}
+/* MAXIMUM WIDTH 768 PX  */
+@media (max-width: 768px){
+  .mk-faq{
+    padding: 30px 10px 10px 10px;
+  }
+  .mk-faq-header {
+    margin-bottom: 30px;
+  }
+  .mk-faq-accordion .accordion-item { 
+    padding: 5px 10px;
+  }
+}
+/* MAXIMUM WIDTH 998 PX  */
+@media (min-width: 998px){
+.mk-faq-accordion .accordion-body{
+  padding-left: 90px !important;
+}
+}
+/* .mk-faq-accordion .accordion-button::after {
+  background-image: url("");
+} */
 /* ################################## MK FOLLOW OUR UPDATES SECTION ###########################  */
 .mk-follow .mk-follow-container {
   border: 1px solid #ffffff3a;
@@ -173,43 +218,43 @@ margin-bottom: 60px;
   padding: 90px 45px;
 }
 .mk-follow-title {
-  max-width: 682px ;
+  max-width: 682px;
 }
-.mk-follow-title h2{
+.mk-follow-title h2 {
   font-size: clamp(30px, 10vw, 100px);
   text-align: left;
 }
-.mk-follow-btns{
+.mk-follow-btns {
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.mk-follow-btns .btn{
-font-size: 19px; 
-text-wrap: nowrap;
+.mk-follow-btns .btn {
+  font-size: 19px;
+  text-wrap: nowrap;
 }
-@media (max-width: 998px){
-  .mk-follow .mk-follow-container { 
+@media (max-width: 998px) {
+  .mk-follow .mk-follow-container {
     padding: 50px 25px;
   }
   .mk-follow-title {
-    max-width: 100%; 
+    max-width: 100%;
   }
-  .mk-follow-title h2{ 
+  .mk-follow-title h2 {
     text-align: center;
   }
-  .mk-follow-btns{
-    text-align: center; 
+  .mk-follow-btns {
+    text-align: center;
   }
   .mk-follow-btns {
     align-items: center;
   }
-  .mk-follow-btns .btn{
-  font-size: 16px; 
-  text-wrap: nowrap;
+  .mk-follow-btns .btn {
+    font-size: 16px;
+    text-wrap: nowrap;
   }
-} 
+}
 /* ################################## MK FOOTER SECTION ###########################  */
 .mk-footer {
   border-top: 1px solid #1477da63;
