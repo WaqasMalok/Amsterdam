@@ -9,7 +9,11 @@
 .mk-mrbg-130 {
   margin-bottom: 130px;
 }
-
+@media (max-width: 576px){
+  .mk-mrbg-130 {
+    margin-bottom: 70px;
+  }
+}
 .mk-amsterdam {
   background-color: #050a12;
   max-width: 1920px;
