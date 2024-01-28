@@ -140,6 +140,27 @@
   max-width: 63px;
 }
 }
+/* /////////////////////////////////// FAQS SECTION  //////
+///////////////////////// */
+
+.mk-faq-container{
+  max-width: 900px;
+}
+.mk-faq-header{
+margin-bottom: 60px;
+}
+.mk-faq-header h1{
+  font-size: clamp(25px, 4vw, 56px);
+}
+.mk-faq-header img{
+  width: 80vw;
+ max-width: 536px;
+ min-width: 350px;
+}
+.mk-faq-accordion .accordion-button{
+  background-color: #ffffff27 !important;
+}
+
 /* ################################## MK FOLLOW OUR UPDATES SECTION ###########################  */
 .mk-follow .mk-follow-container {
   border: 1px solid #ffffff3a;
