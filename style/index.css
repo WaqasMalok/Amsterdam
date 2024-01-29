@@ -89,7 +89,7 @@ html{
 .coin-3,
 .coin-4,
 .coin-5 {
-  animation: coins 4s linear infinite;
+  animation: coins 6s linear infinite;
 }
 .mk-coins img:nth-child(1) {
   animation-delay: 2s;
@@ -110,8 +110,11 @@ html{
   0% {
     transform: translateY(0px);
   }
-  50% {
-    transform: translateY(20px);
+  30% {
+    transform: translateY(15px);
+  }
+  70% {
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0px);
