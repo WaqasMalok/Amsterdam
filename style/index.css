@@ -6,16 +6,8 @@
   margin: 0%;
   font-family: "Space Grotesk", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
-}
-.mk-mrbg-130 {
-  margin-bottom: 130px;
-}
-@media (max-width: 576px) {
-  .mk-mrbg-130 {
-    margin-bottom: 70px;
-  }
 }
 .mk-amsterdam {
   background-color: #050a12;
@@ -23,14 +15,60 @@ html{
   overflow: hidden;
 }
 
-.mk-bg-dot {
+/* .mk-bg-dot {
   width: 80vw;
   height: 80vh;
-  z-index: -0;
   background-image: radial-gradient(closest-side, #1477da36, #050a12);
+} */
+/* //////////////////////////////////////////////////// */
+
+/* .mk-dot::before {
+  content: "";
+  width: 90vw;
+  height: 90vh;
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
+  border-radius: 50%;
+  position: absolute;
+ 
+} */
+/* ########
+   START
+######## */
+
+/* ########
+ SPACING  START
+######## */
+.mk-mb-lg {
+  margin-bottom: clamp(70px, 9vw, 130px);
 }
-/* ///////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////// */
+.mk-mb-md {
+  margin-bottom: clamp(30px, 6vw, 90px);
+}
+.mk-mb-sm{
+  margin-bottom: clamp(20px, 4vw, 60px);
+
+}
+
+/* ########
+section devider START
+######## */
+.mk-section-devider {
+  width: 80vw;
+  max-width: 536px;
+  min-width: 350px;
+}
+
+/* ########
+HEADING FONT START
+######## */
+.mk-heading-3 {
+  font-size: clamp(26px, 3vw, 56px);
+}
+
+
+/* ########
+HEADING FONT END
+######## */
 
 .mk-hero-section {
   height: 100vh;
@@ -40,10 +78,8 @@ html{
   justify-content: center;
   align-items: end;
 }
-.mk-bg-dot-hero-section {
-  position: absolute;
-  top: -40%;
-}
+
+
 .mk-hero-content {
   max-width: 1198px;
   text-align: center;
@@ -150,9 +186,20 @@ html{
     max-width: 63px;
   }
 }
+/* /////////////////////// WHALE STAKING STATS ///////////////// */
+.mk-stats-body{
+  max-width: 1350px;
+  border: 2px solid red;
+}
+.mk-stats-cards{
+  border: 2px solid #fff;
+  padding: 50px;
+}
+
+
 /* /////////////////////////////////// FAQS SECTION  //////
 ///////////////////////// */
-.mk-faq{
+.mk-faq {
   padding: 40px 10px 10px 10px;
 }
 .mk-faq-container {
@@ -161,14 +208,7 @@ html{
 .mk-faq-header {
   margin-bottom: 60px;
 }
-.mk-faq-header h1 {
-  font-size: clamp(25px, 4vw, 56px);
-}
-.mk-faq-header img {
-  width: 80vw;
-  max-width: 536px;
-  min-width: 350px;
-}
+
 .mk-faq-accordion .accordion-item,
 .accordion-button {
   background-color: #151921 !important;
@@ -187,7 +227,7 @@ html{
 .mk-faq-accordion .accordion-button {
   font-size: clamp(20px, 2vw, 24px);
 }
-.mk-faq-accordion .accordion-body{
+.mk-faq-accordion .accordion-body {
   font-size: clamp(16px, 2vw, 20px);
 }
 .mk-faq-accordion .accordion-button:focus {
@@ -198,43 +238,41 @@ html{
   box-shadow: none;
   border-bottom: 1px solid #ffffff25;
 }
-.mk-faq-accordion .accordion-body{
+.mk-faq-accordion .accordion-body {
   padding-left: 57px !important;
 }
-.mk-faq-accordion .accordion-button::after{
+.mk-faq-accordion .accordion-button::after {
   background-image: url("../icons/icon-plus.svg");
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("../icons/minus.png");
-  
 }
 /* MAXIMUM WIDTH 768 PX  */
-@media (max-width: 768px){
-  .mk-faq{
+@media (max-width: 768px) {
+  .mk-faq {
     padding: 30px 10px 10px 10px;
   }
   .mk-faq-header {
     margin-bottom: 30px;
   }
-  .mk-faq-accordion .accordion-item { 
+  .mk-faq-accordion .accordion-item {
     padding: 5px;
   }
   .mk-faq-accordion .accordion-button {
     padding: 10px;
   }
-  .mk-faq-accordion .accordion-body{
+  .mk-faq-accordion .accordion-body {
     font-size: clamp(16px, 2vw, 20px);
-  
   }
-  .mk-faq-accordion .accordion-body{
+  .mk-faq-accordion .accordion-body {
     padding: 10px !important;
   }
 }
 /* MAXIMUM WIDTH 998 PX  */
-@media (min-width: 998px){
-.mk-faq-accordion .accordion-body{
-  padding-left: 90px !important;
-}
+@media (min-width: 998px) {
+  .mk-faq-accordion .accordion-body {
+    padding-left: 90px !important;
+  }
 }
 /* .mk-faq-accordion .accordion-button::after {
   background-image: url("");
@@ -297,10 +335,7 @@ html{
 }
 .mk-footer-logo {
   width: 214px;
-}
-.mk-bg-dot-footer-section {
-  bottom: -20%;
-}
+} 
 .mk-footer-social-icons {
   padding: 40px 0px 20px 0px;
 }
