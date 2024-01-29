@@ -190,15 +190,13 @@ HEADING FONT END
   padding: 0px 10px;
 }
 .mk-stats-body{
-  max-width: 1350px;
-  /* border: 2px solid red; */
+  max-width: 1350px; 
   display: grid;
   column-gap: 30px;
   row-gap: 27px;
   grid-template-columns: repeat(6, 1fr);
 }
-.mk-stats-cards{
-  border: 2px solid #fff;
+.mk-stats-cards{ 
   padding:30px 20px;
   display: flex;
   flex-direction: column;
@@ -206,6 +204,9 @@ HEADING FONT END
   align-items: center;
   border-radius: 10px;
   border: 1px solid #ffffff2e;
+}
+.mk-stats-cards p, small{
+color: #ffffffaf;
 }
 .mk-stats-card-1{
   grid-column-start: 1;
@@ -234,6 +235,46 @@ HEADING FONT END
   grid-column-end: 7;
 } 
 
+@media (max-width: 998px){
+  .mk-stats-body{
+    column-gap: 15px;
+    row-gap: 12px; 
+  }  
+}
+@media (max-width: 768px){
+  .mk-stats-body{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mk-stats-cards{ 
+    padding:15px 10px;
+  }
+  .mk-stats-card-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .mk-stats-card-2{
+    grid-column-start: 3;
+    grid-column-end: 6;
+  }
+  .mk-stats-card-3{
+    grid-column-start: 3;
+    grid-column-end: 6;
+  }
+   .mk-stats-card-4{
+    grid-column-start: 1;
+    grid-column-end:6;
+  }
+  .mk-stats-card-5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .mk-stats-card-6{
+    grid-column-start: 3;
+    grid-column-end: 6;
+  } 
+}
 /* /////////////////////////////////// FAQS SECTION  //////
 ///////////////////////// */
 .mk-faq {
