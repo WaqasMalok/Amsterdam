@@ -186,9 +186,12 @@ HEADING FONT END
   }
 }
 /* /////////////////////// WHALE STAKING STATS ///////////////// */
+.mk-stats{
+  padding: 0px 10px;
+}
 .mk-stats-body{
   max-width: 1350px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
   column-gap: 30px;
   row-gap: 27px;
@@ -201,6 +204,8 @@ HEADING FONT END
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
 }
 .mk-stats-card-1{
   grid-column-start: 1;
