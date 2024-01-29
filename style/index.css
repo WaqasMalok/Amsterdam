@@ -324,6 +324,7 @@ font-size: clamp(12px, 2vw, 16px);
 }
 .mk-faq-accordion .accordion-body {
   padding-left: 57px !important;
+  color: #ffffffad;
 }
 .mk-faq-accordion .accordion-button::after {
   background-image: url("../icons/icon-plus.svg");
