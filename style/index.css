@@ -324,8 +324,8 @@ small {
   max-width: 1240px;
   border-radius: 16px;
   border: 1px solid #042443;
-  padding-top: clamp(10px, 4vw, 65px);
-  padding-bottom: clamp(0px, 5vw, 70px);
+  padding-top: clamp(20px, 4vw, 65px);
+  padding-bottom: clamp(20px, 5vw, 70px);
 
   background-color: #1519214b !important;
 }
