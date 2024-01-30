@@ -327,6 +327,22 @@ small {
   padding: 65px 0px 70px 0px;
   background-color: #1519214b !important;
 }
+
+.mk-table{
+  border-top: 1px solid #ffffff21;
+  margin-left: clamp(0px, 6vw, 90px);
+  margin-right: clamp(0px, 6vw, 90px);
+  padding-top: clamp(10px, 4vw, 50px);
+}
+.mk-table .mk-daily, .mk-monthly{
+  margin-bottom: clamp(20px, 5vw, 50px);
+}
+.mk-table h6{
+  font-size: clamp(18px, 2vw, 25px);
+}
+.mk-table p{
+  font-size: clamp(15px, 2vw, 20px);
+}
 /* //////////////////////// FAQS SECTION  //////////// */
 .mk-faq {
   padding: 40px 10px 10px 10px;
