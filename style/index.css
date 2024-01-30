@@ -318,6 +318,15 @@ small {
     padding: 0px 0px 20px 0px;
   }
 }
+/* //////////////////////// CALCULATOR SECTION  //////////// */
+
+.mk-calculator-body{
+  max-width: 1240px;
+  border-radius: 16px;
+  border: 1px solid #042443;
+  padding: 65px 0px 70px 0px;
+  background-color: #1519214b !important;
+}
 /* //////////////////////// FAQS SECTION  //////////// */
 .mk-faq {
   padding: 40px 10px 10px 10px;

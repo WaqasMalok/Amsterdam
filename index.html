@@ -65,26 +65,30 @@
             />
           </div>
           <!-- body  -->
-          <!-- <span  class="code2" data-num="20">0</span> -->
           <div class="mk-stats-body m-auto">
             <div class="mk-stats-cards mk-stats-card-1 text-white">
-              
-              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium"><span  class="code" data-num="480">0</span></h1>
+              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
+                <span class="code" data-num="480">0</span>
+              </h1>
               <p class="mb-0">Kg of trash removed</p>
             </div>
             <div class="mk-stats-cards mk-stats-card-2 text-white">
               <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
-                $<span  class="code2" data-num="20">0</span><small class="fs-6">M+</small>
+                $<span class="code2" data-num="20">0</span
+                ><small class="fs-6">M+</small>
               </h1>
               <p class="mb-0">Amount Staked</p>
             </div>
             <div class="mk-stats-cards mk-stats-card-3 text-white">
-              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">$<span  class="code3" data-num="100,000">0</span></h1>
+              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
+                $<span class="code3" data-num="10000">0</span>
+              </h1>
               <p class="mb-0">Reward Paid Out</p>
             </div>
             <div class="mk-stats-cards mk-stats-card-4 text-white">
               <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
-                <span  class="code4" data-num="70">0</span><small class="fs-6">Years</small>
+                <span class="code4" data-num="70">0</span
+                ><small class="fs-6">Years</small>
               </h1>
               <p class="mb-0">
                 Whale Staking is a trusted validator for 9+ layer
@@ -92,12 +96,15 @@
             </div>
             <div class="mk-stats-cards mk-stats-card-5 text-white">
               <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
-                <span  class="code5" data-num="70">0</span><small class="fs-6">Years</small>
+                <span class="code5" data-num="70">0</span
+                ><small class="fs-6">Years</small>
               </h1>
               <p class="mb-0">Kg of trash removed</p>
             </div>
             <div class="mk-stats-cards mk-stats-card-6 text-white">
-              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium"><span  class="code6" data-num="12">0</span></h1>
+              <h1 class="mb-md-3 mb-1 mk-heading-4 fw-medium">
+                <span class="code6" data-num="12">0</span>
+              </h1>
               <p class="mb-0">Participents</p>
             </div>
           </div>
@@ -167,7 +174,7 @@
           />
         </div>
         <!-- body  -->
-        <div class="mk-calculator-body"></div>
+        <div class="mk-calculator-body m-auto"></div>
       </section>
       <!-- FAQS SECTION  -->
       <section
@@ -379,12 +386,12 @@
     <script>
       // COUNTER
       var code = document.querySelector(".code"),
-          code2 = document.querySelector(".code2"),
-          code3 = document.querySelector(".code3"),
-          code4 = document.querySelector(".code4"),
-          code5 = document.querySelector(".code5"),
-          code6 = document.querySelector(".code6");
-// 11111
+        code2 = document.querySelector(".code2"),
+        code3 = document.querySelector(".code3"),
+        code4 = document.querySelector(".code4"),
+        code5 = document.querySelector(".code5"),
+        code6 = document.querySelector(".code6");
+      // 11111
       function codetime() {
         if (code.textContent >= 480) {
           clearInterval(3);
@@ -393,7 +400,7 @@
         }
       }
       setInterval(codetime, 20);
-// 22222
+      // 22222
       function code2time() {
         if (code2.textContent >= 20) {
           clearInterval(1);
@@ -402,17 +409,17 @@
         }
       }
       setInterval(code2time, 300);
-// 33333
-function code3time() {
-        if (code3.textContent >= 100000) {
+      // 33333
+      function code3time() {
+        if (code3.textContent >= 10000) {
           clearInterval(1);
         } else {
           code3.textContent++;
         }
       }
-      setInterval(code3time, 0.5);
-// 444444
-function code4time() {
+      setInterval(code3time, 1);
+      // 444444
+      function code4time() {
         if (code4.textContent >= 70) {
           clearInterval(1);
         } else {
@@ -420,8 +427,8 @@ function code4time() {
         }
       }
       setInterval(code4time, 100);
-// 555555
-function code5time() {
+      // 555555
+      function code5time() {
         if (code5.textContent >= 70) {
           clearInterval(1);
         } else {
