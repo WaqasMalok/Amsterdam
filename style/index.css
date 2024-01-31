@@ -103,6 +103,10 @@ HEADING FONT END
 .mk-nav .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #1478DA;
 }
+.mk-nav .navbar-nav .nav-link {
+  color: #ffffff;
+  padding-inline: 25px;
+}
 /* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
   height: 90vh;
