@@ -100,7 +100,9 @@ HEADING FONT END
 .mk-nav .navbar-brand{
   max-width: clamp(85px,  13vw, 168px) ;
 }
-
+.mk-nav .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #1478DA;
+}
 /* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
   height: 90vh;
