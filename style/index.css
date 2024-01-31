@@ -451,6 +451,12 @@ small {
   font-size: clamp(15px, 2vw, 20px);
 }
 
+.mk-range {
+  max-width: 970px;
+  
+}
+
+/* time daily monthly yearly   */
 .mk-stake .mk-stake-input {
   border: 1px solid #ffffff2d;
   max-width: 460px;
