@@ -82,16 +82,23 @@ HEADING FONT END
 /* ///////////////// NAVIGATION  /////////////////  */
 .mk-nav{
   border: 2px solid red;
-  max-width: 1470px;
-  padding: 25px 77px;
+  max-width: 1460px;
+  /* padding: 25px 77px; */
+  padding-inline: clamp(10px, 6vw, 77px);
+  padding-block: clamp(5px, 2vw, 25px);
   margin-top: 24px;
   margin-inline: auto;
   border: 12px;
   background-color: #ffffff1a;
 }
+@media (max-width:1460px){
+  .mk-nav{ 
+    margin-inline: 10px; 
+  }
 
+}
 .mk-nav .navbar-brand{
-  max-width: 168px;
+  max-width: clamp(85px,  13vw, 168px) ;
 }
 
 /* //////////////// HERO SECTION ////////////////////////  */
