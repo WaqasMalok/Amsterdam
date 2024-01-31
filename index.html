@@ -213,11 +213,14 @@
           </p>
         </div>
       </section>
+
       <!-- STAKING CALCULATOR  -->
-      <section class="mk-calculator mk-mb-lg  position-relative">
+      <section class="mk-calculator mk-mb-lg position-relative">
         <span class="mk-bg-shadow"></span>
         <!-- header  -->
-        <div class="mk-calculator-header text-center mk-mb-sm  z-1 position-relative">
+        <div
+          class="mk-calculator-header text-center mk-mb-sm z-1 position-relative"
+        >
           <h3 class="mb-3 text-white mk-heading-3 fw-bold">
             Staking Calculator
           </h3>
@@ -228,70 +231,77 @@
           />
         </div>
         <!-- body  -->
-        <div class="mk-calculator-body mx-auto  z-1 position-relative">
-          <div class="mk-claculation">
-          <div class="d-flex justify-content-between align-items-center mb-lg-5 mb-3">
-            <div class="mk-stake text-white">
-              <p class="">cudos Price</p>
-              <div class="mk-calculator-inputs">
-                <input class="w-100" type="number" pattern="1000" /> 
+        <div class="mk-calculator-body mx-auto z-1 position-relative">
+          <div class="mk-calculation">
+            <div
+              class="d-flex justify-content-between align-items-center mb-lg-5 mb-3"
+            >
+              <div class="mk-stake text-white">
+                <p class="">cudos Price</p>
+                <div class="mk-calculator-inputs">
+                  <input class="w-100" type="number" pattern="1000" />
+                </div>
+              </div>
+              <div class="mk-stake text-white">
+                <p class="">yearly return</p>
+                <div class="mk-calculator-inputs">
+                  <input class="w-100" type="number" pattern="1000" />
+                </div>
               </div>
             </div>
-            <div class="mk-stake text-white">
-              <p class="">yearly return</p>
-              <div class="mk-calculator-inputs">
-                <input class="w-100" type="number" pattern="1000" /> 
+            <div class="mk-range text-white mx-auto mb-lg-3 py-2">
+              <input
+                type="range"
+                min="1000"
+                max="2000000"
+                value="50"
+                class="slider w-100"
+                id="myRange"
+              />
+              <div class="d-flex justify-content-between dynamicrange">
+                <span class="range-minus" id="demo">1.000</span>
+                <span class="range-minus">2,000.000</span>
               </div>
             </div>
-          </div>
-          <div class="mk-range text-white mx-auto mb-lg-3 py-2">
-            <input
-              type="range"
-              min="1000"
-              max="2000000"
-              value="50"
-              class="slider w-100"
-              id="myRange"
-            />
-            <div class="d-flex justify-content-between"> <span class="range-minus">1.000</span>
-            <span class="range-minus">2,000.000</span></div>
-           
-          </div>
 
-          <div class="mk-stake text-white text-center">
-            <p class="">Your CUDOS Stake</p>
-            <div class="mk-calculator-inputs d-flex align-items-center m-auto">
-              <input class="w-100" type="number" pattern="1000" />
-              
-              <div class="d-flex flex-column justify-content-between">
-                <i class="fa-solid fa-chevron-up mb-1"></i>
-                <i class="fa-solid fa-chevron-down"></i>
+            <div class="mk-stake text-white text-center">
+              <p class="">Your CUDOS Stake</p>
+              <div
+                class="mk-calculator-inputs d-flex align-items-center m-auto"
+              >
+                <input class="w-100" type="number" pattern="1000" />
+
+                <div class="d-flex flex-column justify-content-between">
+                  <i class="fa-solid fa-chevron-up mb-1"></i>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </div>
             </div>
-          </div></div>
+          </div>
           <!-- time daily monthly yearly  -->
           <div class="mk-table">
             <!-- DAILY  -->
             <div class="mk-daily text-white d-flex justify-content-around">
               <h6 class="m-0 fw-bold">Daily</h6>
-              <p class="m-0 fw-medium">0.82 CUDOS</p>
+              <div class="m-0 fw-medium "><span class="dailyCUDOS">30.21</span> CUDOS</div> 
               <p class="m-0 fw-medium">$ 0.00</p>
             </div>
             <!-- MONTHLY  -->
             <div class="mk-monthly text-white d-flex justify-content-around">
               <h6 class="m-0 fw-bold">Monthly</h6>
-              <p class="m-0 fw-medium">0.82 CUDOS</p>
+              <div class="m-0 fw-medium"><span class="MonthlyCUDOS">25.00</span> CUDOS</div> 
               <p class="m-0 fw-medium">$ 0.00</p>
             </div>
             <!-- YEARLY  -->
             <div class="mk-yearly text-white d-flex justify-content-around">
               <h6 class="m-0 fw-bold">Yearly</h6>
-              <p class="m-0 fw-medium">0.82 CUDOS</p>
+              <div class="m-0 fw-medium"><span class="yearlyCUDOS">300.00</span> CUDOS</div> 
               <p class="m-0 fw-medium">$ 0.00</p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- FAQS SECTION  -->
       <section
         class="mk-faq mk-mb-lg d-flex flex-column justify-content-center align-items-center z-1 position-relative"

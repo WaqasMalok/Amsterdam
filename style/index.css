@@ -438,6 +438,7 @@ small {
     padding: 0px 0px 20px 0px;
   }
 }
+
 /* //////////////////////// CALCULATOR SECTION  //////////// */
 
 .mk-calculator-body {
@@ -452,13 +453,13 @@ small {
 }
 .mk-calculation{
   padding: 20px 0px;
-  max-width: 970px;
+  max-width: 970px; 
 }
 .mk-calculator-inputs{
   border: 1px solid #ffffff2d;
   max-width: 460px;
   padding: 10px;
-
+border-radius: 10px;
 } 
 .mk-calculator-inputs input {
   color: #fff;
