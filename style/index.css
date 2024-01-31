@@ -73,9 +73,30 @@ HEADING FONT START
 /* ########
 HEADING FONT END
 ######## */
+/* /////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+///////////////////////////////////////////////// */
 
+/* ///////////////// NAVIGATION  /////////////////  */
+.mk-nav{
+  border: 2px solid red;
+  max-width: 1470px;
+  padding: 25px 77px;
+  margin-top: 24px;
+  margin-inline: auto;
+  border: 12px;
+  background-color: #ffffff1a;
+}
+
+.mk-nav .navbar-brand{
+  max-width: 168px;
+}
+
+/* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
-  height: 100vh;
+  height: 90vh;
   max-height: 900px;
   display: flex;
   justify-content: center;
@@ -324,8 +345,7 @@ small {
   max-width: 1240px;
   border-radius: 16px;
   border: 1px solid #042443;
-  padding-top: clamp(20px, 4vw, 65px);
-  padding-bottom: clamp(20px, 5vw, 70px);
+  padding: clamp(20px, 4vw, 65px);
   background-color: #1519214b !important;
 }
 .mk-calculator-body p{
@@ -334,7 +354,7 @@ small {
 
 .mk-stake .mk-stake-input{
   border: 1px solid #ffffff2d;
-  width: 460px;
+  max-width: 460px;
   padding: 10px;
 }
 .mk-stake .mk-stake-input input{
@@ -358,8 +378,6 @@ cursor: pointer;
 }
 .mk-table{
   border-top: 1px solid #ffffff21;
-  margin-left: clamp(0px, 6vw, 90px);
-  margin-right: clamp(0px, 6vw, 90px);
   padding-top: clamp(10px, 4vw, 50px);
 }
 .mk-table .mk-daily, .mk-monthly{
