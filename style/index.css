@@ -81,13 +81,12 @@ HEADING FONT END
 
 /* ///////////////// NAVIGATION  /////////////////  */
 .mk-nav {
-  border: 2px solid red;
   max-width: 1460px;
   padding-inline: clamp(5px, 5vw, 77px);
   padding-block: clamp(5px, 2vw, 25px);
   margin-top: 24px;
   margin-inline: auto;
-  border: 12px;
+  border-radius: 12px;
   background-color: #ffffff1a;
 }
 @media (max-width: 1460px) {
@@ -110,8 +109,8 @@ HEADING FONT END
   font-weight: 300;
 }
 .mk-nav .offcanvas-end {
-  background-color: #050A12;
-  border-left: 1px solid #1478DA;
+  background-color: #050a12;
+  border-left: 1px solid #1478da;
 }
 
 /* NAVIGATION BAR BUGGER  */
@@ -124,32 +123,48 @@ HEADING FONT END
   height: 1px;
   background-image: none;
   position: relative;
-  /* 
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%; */
 }
 .mk-nav .navbar-toggler-icon::after,
-.mk-nav .navbar-toggler-icon::before{
-content: "";
-background-color: #fff;
+.mk-nav .navbar-toggler-icon::before {
+  content: "";
+  background-color: #fff;
   width: 30px;
   height: 1px;
   position: absolute;
-  
 }
-.mk-nav .navbar-toggler-icon::after{
+.mk-nav .navbar-toggler-icon::after {
   top: 8px;
   right: 0px;
 }
-.mk-nav .navbar-toggler-icon::before{
-    bottom: 8px;
-    right: 0px;
-  }
+.mk-nav .navbar-toggler-icon::before {
+  bottom: 8px;
+  right: 0px;
+}
+.mk-nav .navbar .show {
+  padding: 20px;
+}
+.mk-nav .navbar .show .btn-close {
+  background-image: none;
+  position: relative;
+}
+.mk-nav .navbar .show .btn-close:focus {
+  box-shadow: none;
+}
+.mk-nav .navbar .show .btn-close::after,
+.mk-nav .navbar .show .btn-close::before {
+  content: "";
+  background-color: #fff;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  right: 0px;
+}
+.mk-nav .navbar .show .btn-close::after {
+  transform: rotate(45deg);
+}
+.mk-nav .navbar .show .btn-close::before {
+  transform: rotate(-45deg);
+}
 /* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
   height: 80vh;
