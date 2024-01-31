@@ -128,17 +128,28 @@ HEADING FONT END
 .mk-nav .navbar-toggler-icon::before {
   content: "";
   background-color: #fff;
-  width: 30px;
   height: 1px;
   position: absolute;
+  transition: 0.7s;
+}
+.mk-nav .navbar-toggler:hover .navbar-toggler-icon::after,
+.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
+width: 30px;
+}
+ 
+.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
+  
+  right: 0px;
 }
 .mk-nav .navbar-toggler-icon::after {
-  top: 8px;
+  width: 10px;
+  top: 5px;
   right: 0px;
 }
 .mk-nav .navbar-toggler-icon::before {
-  bottom: 8px;
-  right: 0px;
+  width: 10px;
+  bottom: 5px;
+  right: 20px;
 }
 .mk-nav .navbar .show {
   padding: 20px;
