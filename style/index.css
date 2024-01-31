@@ -101,16 +101,19 @@ HEADING FONT END
   max-width: clamp(85px,  13vw, 168px) ;
 }
 .mk-nav .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: #1478DA;
+  color: #fff;
+  font-weight: 800;
 }
 .mk-nav .navbar-nav .nav-link {
   color: #ffffff;
   padding-inline: 25px;
+  font-size: 18px;
+  font-weight:300;
 }
 /* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
-  height: 90vh;
-  max-height: 900px;
+  height: 80vh;
+  max-height: 800px;
   display: flex;
   justify-content: center;
   align-items: end;
