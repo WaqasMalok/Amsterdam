@@ -450,19 +450,17 @@ small {
 .mk-calculator-body p {
   font-size: clamp(15px, 2vw, 20px);
 }
-
-.mk-range {
+.mk-calculation{
+  padding: 20px 0px;
   max-width: 970px;
-  
 }
-
-/* time daily monthly yearly   */
-.mk-stake .mk-stake-input {
+.mk-calculator-inputs{
   border: 1px solid #ffffff2d;
   max-width: 460px;
   padding: 10px;
-}
-.mk-stake .mk-stake-input input {
+
+} 
+.mk-calculator-inputs input {
   color: #fff;
   background: transparent;
   font-size: clamp(22px, 2vw, 40px);
@@ -470,11 +468,12 @@ small {
   outline: none;
   border: none;
 }
-.mk-stake .mk-stake-input input::-webkit-inner-spin-button,
-.mk-stake .mk-stake-input input::-webkit-outer-spin-button {
+.mk-calculator-inputs input::-webkit-inner-spin-button,
+.mk-calculator-inputs input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0px;
 }
+/* time daily monthly yearly   */
 .mk-stake .fa-solid {
   color: #ffffff48;
   font-size: clamp(15px, 2vw, 20px);
