@@ -83,8 +83,7 @@ HEADING FONT END
 .mk-nav{
   border: 2px solid red;
   max-width: 1460px;
-  /* padding: 25px 77px; */
-  padding-inline: clamp(10px, 6vw, 77px);
+  padding-inline: clamp(5px, 5vw, 77px);
   padding-block: clamp(5px, 2vw, 25px);
   margin-top: 24px;
   margin-inline: auto;
@@ -93,12 +92,12 @@ HEADING FONT END
 }
 @media (max-width:1460px){
   .mk-nav{ 
-    margin-inline: 10px; 
+    margin-inline: 5px; 
   }
 
 }
 .mk-nav .navbar-brand{
-  max-width: clamp(85px,  13vw, 168px) ;
+  max-width: clamp(95px,  13vw, 168px) ;
 }
 .mk-nav .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #fff;
@@ -109,6 +108,10 @@ HEADING FONT END
   padding-inline: 25px;
   font-size: 18px;
   font-weight:300;
+}
+.mk-nav .offcanvas-end{
+  background-color: #0424439f;
+  border-radius: 1px solid #040404;
 }
 /* //////////////// HERO SECTION ////////////////////////  */
 .mk-hero-section {
