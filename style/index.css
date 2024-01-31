@@ -187,7 +187,7 @@ HEADING FONT END
 .mk-hero-content {
   max-width: 1198px;
   text-align: center;
-  z-index: 3;
+  z-index: 1;
   padding: 0px 10px;
 }
 .mk-hero-title {
