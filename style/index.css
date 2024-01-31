@@ -14,23 +14,21 @@ html {
   max-width: 1920px;
   overflow: hidden;
 }
-
-/* .mk-bg-dot {
-  width: 80vw;
-  height: 80vh;
-  background-image: radial-gradient(closest-side, #1477da36, #050a12);
-} */
-/* //////////////////////////////////////////////////// */
-
-/* .mk-dot::before {
+.mk-bg-shadow {  
+  position: absolute;  
+  top: 0%;
+  left: 0%;
+  /* z-index: 1; */
+}
+.mk-bg-shadow::before {
   content: "";
   width: 90vw;
   height: 90vh;
   background-image: radial-gradient(closest-side, #1477da36, #050a12);
-  border-radius: 50%;
   position: absolute;
+} 
+/* //////////////////////////////////////////////////// */
  
-} */
 /* ########
    START
 ######## */
@@ -133,11 +131,10 @@ HEADING FONT END
   transition: 0.7s;
 }
 .mk-nav .navbar-toggler:hover .navbar-toggler-icon::after,
-.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
-width: 30px;
+.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before {
+  width: 30px;
 }
-.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
-  
+.mk-nav .navbar-toggler:hover .navbar-toggler-icon::before {
   right: 0px;
 }
 .mk-nav .navbar-toggler-icon::after {
@@ -183,6 +180,10 @@ width: 30px;
   justify-content: center;
   align-items: end;
 }
+/* bg top shadow  */
+.mk-hero-section .mk-bg-shadow{
+  top: -60%;
+}
 .mk-hero-content {
   max-width: 1198px;
   text-align: center;
@@ -201,7 +202,6 @@ width: 30px;
     margin-bottom: 15px;
   }
 }
-
 /* ANIMATION COINS  */
 .mk-coins .coin-1 {
   top: 25%;
@@ -303,13 +303,20 @@ width: 30px;
     bottom: 13%;
     right: 5%;
     max-width: 50px;
-
   }
 }
 /* /////////////////////// WHALE STAKING STATS ///////////////// */
 .mk-stats {
   padding: 0px 10px;
 }
+.mk-stats .mk-bg-shadow{
+  left: 5%;
+  top: -5%;
+}
+.mk-stats .mk-bg-shadow::before { 
+  background-image: radial-gradient(closest-side, #1477da1c, #050a122a);
+  
+} 
 .mk-stats-body {
   max-width: 1350px;
   display: grid;
@@ -491,7 +498,7 @@ small {
 
 .mk-faq-accordion .accordion-item,
 .accordion-button {
-  background-color: #151921 !important;
+  background-color: #1519212c !important;
 }
 .mk-faq-accordion .accordion-item {
   border-radius: 8px;
