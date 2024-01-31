@@ -120,7 +120,7 @@ HEADING FONT END
 .mk-nav .navbar-toggler-icon {
   background-color: #fff;
   width: 30px;
-  height: 1px;
+  height: 1.5px;
   background-image: none;
   position: relative;
 }
@@ -128,7 +128,7 @@ HEADING FONT END
 .mk-nav .navbar-toggler-icon::before {
   content: "";
   background-color: #fff;
-  height: 1px;
+  height: 1.5px;
   position: absolute;
   transition: 0.7s;
 }
@@ -136,7 +136,6 @@ HEADING FONT END
 .mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
 width: 30px;
 }
- 
 .mk-nav .navbar-toggler:hover .navbar-toggler-icon::before{
   
   right: 0px;
@@ -184,7 +183,6 @@ width: 30px;
   justify-content: center;
   align-items: end;
 }
-
 .mk-hero-content {
   max-width: 1198px;
   text-align: center;
@@ -254,33 +252,58 @@ width: 30px;
   }
 }
 
-/* RESPONSIVE  */
+/* COINS RESPONSIVE  */
 @media (max-width: 576px) {
   /* ANIMATION COINS  */
   .mk-coins .coin-1 {
     top: 40%;
-    left: 0%;
-    max-width: 100px;
+    left: 3%;
+    max-width: 160px;
   }
   .mk-coins .coin-2 {
     bottom: 11%;
     left: -1%;
-    max-width: 65px;
+    max-width: 120px;
   }
   .mk-coins .coin-3 {
-    bottom: 11%;
-    right: 13%;
-    max-width: 100px;
+    bottom: 13%;
+    right: 11%;
+    max-width: 119px;
   }
   .mk-coins .coin-4 {
-    top: 32%;
+    top: 25%;
     right: 0%;
-    max-width: 170px;
+    max-width: 220px;
   }
   .mk-coins .coin-5 {
     bottom: 13%;
     right: 2%;
     max-width: 63px;
+  }
+}
+@media (max-width: 420px) {
+  /* ANIMATION COINS  */
+  .mk-coins .coin-1 {
+    top: 35%;
+    left: 4%;
+  }
+  .mk-coins .coin-2 {
+    bottom: 11%;
+    left: -1%;
+  }
+  .mk-coins .coin-3 {
+    bottom: 11%;
+    right: 13%;
+  }
+  .mk-coins .coin-4 {
+    top: 12%;
+    right: 0%;
+  }
+  .mk-coins .coin-5 {
+    bottom: 13%;
+    right: 5%;
+    max-width: 50px;
+
   }
 }
 /* /////////////////////// WHALE STAKING STATS ///////////////// */
