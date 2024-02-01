@@ -451,6 +451,24 @@ small {
 .mk-calculator-body p {
   font-size: clamp(15px, 2vw, 20px);
 }
+.mk-calculator-body #select{
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #ffffff2d;
+  outline: none;
+  color: #ffffff9a;
+  font-size: clamp(18px, 3vw, 30px);
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.mk-calculator-body #select:hover{
+  color: #ffffff;
+}
+.mk-calculator-body #select option{
+  color: #000;
+  font-size: clamp(15px, 2vw, 20px); 
+
+}
 .mk-calculation{
   padding: 20px 0px;
   max-width: 970px; 
@@ -653,3 +671,4 @@ border-radius: 10px;
 .mk-footer-container {
   border-bottom: 1px solid #ffffff44;
 }
+ 
