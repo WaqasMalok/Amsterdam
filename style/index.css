@@ -17,8 +17,7 @@ html {
 .mk-bg-shadow {
   position: absolute;
   top: 0%;
-  left: 0%;
-  /* z-index: 1; */
+  left: 0%; 
 }
 .mk-bg-shadow::before {
   content: "";
@@ -30,7 +29,7 @@ html {
 /* //////////////////////////////////////////////////// */
 
 /* ########
-   START
+   START DESIGNING
 ######## */
 
 /* ########
@@ -366,7 +365,7 @@ small {
   grid-column-start: 4;
   grid-column-end: 7;
 }
-
+/* responsive  */
 @media (max-width: 998px) {
   .mk-stats-body {
     column-gap: 15px;
@@ -423,6 +422,9 @@ small {
   padding-left: clamp(0px, 6vw, 90px);
   padding-bottom: 20px;
 }
+
+/* responsive  */
+
 @media (max-width: 1200px) {
   .mk-mission-body-image {
     width: 60%;
@@ -492,11 +494,7 @@ small {
 .mk-calculator-inputs input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0px;
-}
-/* Design input thumb  */
-/* .mk-range input{
-  border: 2px solid red;
-} */
+} 
 .mk-range input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 32px !important;
@@ -552,10 +550,7 @@ small {
   border-top: 1px solid #ffffff2e !important;
   border-bottom: 1px solid #ffffff2e !important;
 }
-/* .mk-faq-accordion .accordion-button:focus>.accordion-item {
- 
-  border: 10px solid #ff0000;
-} */
+
 .mk-faq-accordion .accordion-button {
   font-size: clamp(20px, 2vw, 24px);
 }
@@ -580,6 +575,9 @@ small {
 .accordion-button:not(.collapsed)::after {
   background-image: url("../icons/minus.png");
 }
+
+/* responsive  */
+
 /* MAXIMUM WIDTH 768 PX  */
 @media (max-width: 768px) {
   .mk-faq {
@@ -606,10 +604,7 @@ small {
   .mk-faq-accordion .accordion-body {
     padding-left: 90px !important;
   }
-}
-/* .mk-faq-accordion .accordion-button::after {
-  background-image: url("");
-} */
+} 
 /* ################################## MK FOLLOW OUR UPDATES SECTION ###########################  */
 .mk-follow .mk-follow-container {
   border: 1px solid #ffffff3a;
