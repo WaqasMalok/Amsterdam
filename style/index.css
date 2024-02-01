@@ -495,7 +495,15 @@ small {
   -webkit-appearance: none;
   margin: 0px;
 }
- 
+.mk-range input{
+  border: 2px solid red;
+}
+ #myRange input::-moz-range-thumb{
+width: 34px;
+height: 34px;
+border: 10px solid #fff;
+background-color: #1478da;
+ }
 /* time daily monthly yearly   */
 .mk-stake .fa-solid {
   color: #ffffff48;
