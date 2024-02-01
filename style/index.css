@@ -496,14 +496,22 @@ small {
   -webkit-appearance: none;
   margin: 0px;
 }
-.mk-range input{
+/* Design input thumb  */
+/* .mk-range input{
   border: 2px solid red;
-}
- #myRange input::-moz-range-thumb{
-width: 34px;
+} */
+.mk-range .slider::-moz-range-thumbe{
+width: 34px !important;
 height: 34px;
 border: 10px solid #fff;
 background-color: #1478da;
+-webkit-appearance: none;
+ }
+ .mk-range .slide{
+  background-color: red;
+  width: 100px;
+  max-width: 100px;
+
  }
 /* time daily monthly yearly   */
 .mk-stake .fa-solid {
