@@ -238,9 +238,10 @@
             >
               <div class="text-white">
                 <p class="">cudos Price</p>
-                <div class="mk-calculator-inputs py-0 d-flex">
-                  <input class="w-100 text-align-left  px-3" type="number" value="0.0000" />
-                  <select name="USD" id="select">
+                <div class="mk-calculator-inputs p-0 d-flex">
+                  <input class="w-100 text-left  px-lg-3 px-2" type="number" value="0.000" id="rangenumber"/>
+                  <p id="errormsg" style="color:#FF0000;"></p>
+                  <select class="me-2" name="USD" id="select">
                     <option value="$">&#36;</option>   
                     <option value="">&#165;</option>
                     <option value="">&#8353;</option> 
@@ -254,10 +255,9 @@
               </div>
               <div class="text-white">
                 <p class="">yearly return</p>
-                <div class="mk-calculator-inputs d-flex align-items-center">
-                  <!-- <span>&#126;</span> -->
-                  <input class="w-100" type="number" value="7.38" /> 
-                  <!-- <span> &#37;	</span> -->
+                <div class="mk-calculator-inputs mk-yearly-return d-flex justify-content-center align-items-center">
+                  <span>&#126;</span>  7.38 
+                 <span> &#37;	</span>
                  
                 </div>
               </div>
@@ -268,13 +268,13 @@
                 type="range"
                 min="1000"
                 max="2000000"
-                value="50"
-                class="w-100"
+                value="1000"
+                class="slider w-100"
                 id="myRange"
               />
               <div class="d-flex justify-content-between dynamicrange">
-                <span class="range-minus" id="demo">1.000</span>
-                <span class="range-minus">2,000.000</span>
+                <span class="range-minus" id="demo">0</span>
+                <span class="range-minus" id="count">2,000.000</span>
               </div>
             </div>
 
@@ -296,25 +296,27 @@
           <div class="mk-table">
             <!-- DAILY  -->
             <div class="mk-daily text-white d-flex justify-content-around">
-              <h6 class="m-0 fw-bold">Daily</h6>
-              <div class="m-0 fw-medium "><span class="dailyCUDOS">30.21</span> CUDOS</div> 
-              <p class="m-0 fw-medium">$ 0.00</p>
+              <h6 class="m-0 fw-bold calheading">Daily</h6>
+              <div class="m-0 fw-medium "><span class="dailyCUDOS">0.82</span> CUDOS</div> 
+              <p class="m-0 fw-medium"><span class="currencytype">€</span><span class="dailydolorRate">0.01</span></p>
             </div>
             <!-- MONTHLY  -->
             <div class="mk-monthly text-white d-flex justify-content-around">
-              <h6 class="m-0 fw-bold">Monthly</h6>
+              <h6 class="m-0 fw-bold calheading">Monthly</h6>
               <div class="m-0 fw-medium"><span class="MonthlyCUDOS">25.00</span> CUDOS</div> 
-              <p class="m-0 fw-medium">$ 0.00</p>
+              <p class="m-0 fw-medium"><span class="currencytype">€</span><span class="MonthlyDolorM">0.25</span></p>
             </div>
             <!-- YEARLY  -->
             <div class="mk-yearly text-white d-flex justify-content-around">
-              <h6 class="m-0 fw-bold">Yearly</h6>
+              <h6 class="m-0 fw-bold calheading">Yearly</h6>
               <div class="m-0 fw-medium"><span class="yearlyCUDOS">300.00</span> CUDOS</div> 
-              <p class="m-0 fw-medium">$ 0.00</p>
+              <p class="m-0 fw-medium"><span class="currencytype">€</span><span class="yeardolorM">3.03</span></p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- testing  -->   
 
       <!-- FAQS SECTION  -->
       <section
@@ -525,207 +527,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // COUNTER
-      var code = document.querySelector(".code"),
-        code2 = document.querySelector(".code2"),
-        code3 = document.querySelector(".code3"),
-        code4 = document.querySelector(".code4"),
-        code5 = document.querySelector(".code5"),
-        code6 = document.querySelector(".code6");
-      // 11111
-      function codetime() {
-        if (code.textContent >= 480) {
-          clearInterval(3);
-        } else {
-          code.textContent++;
-        }
-      }
-      setInterval(codetime, 20);
-      // 22222
-      function code2time() {
-        if (code2.textContent >= 20) {
-          clearInterval(1);
-        } else {
-          code2.textContent++;
-        }
-      }
-      setInterval(code2time, 300);
-      // 33333
-      function code3time() {
-        if (code3.textContent >= 10000) {
-          clearInterval(1);
-        } else {
-          code3.textContent++;
-        }
-      }
-      setInterval(code3time, 1);
-      // 444444
-      function code4time() {
-        if (code4.textContent >= 70) {
-          clearInterval(1);
-        } else {
-          code4.textContent++;
-        }
-      }
-      setInterval(code4time, 100);
-      // 555555
-      function code5time() {
-        if (code5.textContent >= 70) {
-          clearInterval(1);
-        } else {
-          code5.textContent++;
-        }
-      }
-      setInterval(code5time, 100);
-      // 6666666
-      function code6time() {
-        if (code6.textContent >= 12) {
-          clearInterval(1);
-        } else {
-          code6.textContent++;
-        }
-      }
-      setInterval(code6time, 100);
-
-      console.log(data_num);
-    </script>
-    <!-- CALCULATOR SCRIPPT  -->
-    <script>
-      var slider = document.getElementById("myRange");
-      var output = document.getElementById("demo");
-      output.innerHTML = addCommas(slider.value);
-      slider.oninput = function () {
-        output.innerHTML = addCommas(this.value);
-        currentValue = this.value;
-        $("#rangenumber").val(this.value);
-        dailyCUDOS = $(this).val() * 0.00082;
-        $(".dailyCUDOS").text(dailyCUDOS.toFixed(2));
-        MonthlyCUDOS = dailyCUDOS * 30.49;
-        $(".MonthlyCUDOS").text(MonthlyCUDOS.toFixed(2));
-        v = 365.8536585365854 * dailyCUDOS;
-        $(".yearlyCUDOS").text(v.toFixed(2));
-
-        currencyType = $(".currency-con.active").data("currency");
-
-        if (currencyType == "USD") {
-          dailyCurrAvg = 0.001975;
-          MonthlyCurrAvg = 0.0006;
-          yearlyCurrAvg = 0.0072;
-          CudosLivePrice = CudosLiveDPrice;
-        } else {
-          dailyCurrAvg = 0.001645;
-          MonthlyCurrAvg = 0.0005;
-          yearlyCurrAvg = 0.006;
-          CudosLivePrice = CudosLiveEUPrice;
-        }
-
-        dailydolorRate = dailyCUDOS * parseFloat(CudosLivePrice);
-        MonthlyDolorM = MonthlyCUDOS * parseFloat(CudosLivePrice);
-        yeardolorM = v * parseFloat(CudosLivePrice);
-
-        $(".dailydolorRate").text(dailydolorRate.toFixed(2));
-        $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
-        $(".yeardolorM").text(yeardolorM.toFixed(2));
-      };
-
-      $(".currency-con").click(function () {
-        currentValue = $("#myRange").val();
-        $(".currency-con").removeClass("active");
-        $(this).addClass("active");
-
-        currencyType = $(this).data("currency");
-
-        if (currencyType == "USD") {
-          MonthlyCurrAvg = 0.0006;
-          yearlyCurrAvg = 0.0072;
-          dailyCurrAvg = 0.001975;
-          $(".currencytype").text("$");
-          CudosLivePrice = CudosLiveDPrice;
-        } else {
-          dailyCurrAvg = 0.001645;
-          MonthlyCurrAvg = 0.0005;
-          yearlyCurrAvg = 0.006;
-          $(".currencytype").text("€");
-          CudosLivePrice = CudosLiveEUPrice;
-        }
-        dailydolorRate = dailyCUDOS * parseFloat(CudosLivePrice);
-        MonthlyDolorM = MonthlyCUDOS * parseFloat(CudosLivePrice);
-        yeardolorM = v * parseFloat(CudosLivePrice);
-
-        $(".dailydolorRate").text(dailydolorRate.toFixed(2));
-        $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
-        $(".yeardolorM").text(yeardolorM.toFixed(2));
-      });
-
-      function addCommas(nStr) {
-        nStr += "";
-        x = nStr.split(".");
-        x1 = x[0];
-        x2 = x.length > 1 ? "." + x[1] : "";
-        var rgx = /(\d+)(\d{3})/;
-        while (rgx.test(x1)) {
-          x1 = x1.replace(rgx, "$1" + "," + "$2");
-        }
-        return x1 + x2;
-      }
-      $("#rangenumber").keyup(function () {
-        if ($(this).val() > 2000000 || $(this).val() < 1000) {
-          $("#rangenumber").css("border-color", "red");
-          if ($(this).val() > 2000000) {
-            $("#errormsg").text("Maximum amount is 2M");
-          } else {
-            $("#errormsg").text("Minimum amount is 1k");
-          }
-        } else {
-          $("#rangenumber").css("border-color", "#04c0df");
-          $("#myRange").val($(this).val());
-          currentValue = $(this).val();
-          $("#demo").text(addCommas($(this).val()));
-
-          dailyCUDOS = $(this).val() * 0.00082;
-          $(".dailyCUDOS").text(dailyCUDOS.toFixed(2));
-          MonthlyCUDOS = dailyCUDOS * 30.49;
-          $(".MonthlyCUDOS").text(MonthlyCUDOS.toFixed(2));
-          $("#errormsg").text("");
-          v = 365.853 * dailyCUDOS;
-          $(".yearlyCUDOS").text(v.toFixed(2));
-
-          currencyType = $(".currency-con.active").data("currency");
-
-          if (currencyType == "USD") {
-            dailyCurrAvg = 0.001975;
-            MonthlyCurrAvg = 0.0006;
-            yearlyCurrAvg = 0.0072;
-            CudosLivePrice = CudosLiveDPrice;
-          } else {
-            dailyCurrAvg = 0.001645;
-            MonthlyCurrAvg = 0.0005;
-            yearlyCurrAvg = 0.006;
-            CudosLivePrice = CudosLiveEUPrice;
-          }
-
-          dailydolorRate = dailyCUDOS * parseFloat(CudosLivePrice);
-          MonthlyDolorM = MonthlyCUDOS * parseFloat(CudosLivePrice);
-          yeardolorM = v * parseFloat(CudosLivePrice);
-          $(".dailydolorRate").text(dailydolorRate.toFixed(2));
-          $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
-          $(".yeardolorM").text(yeardolorM.toFixed(2));
-        }
-      });
-
-      $(document).ready(function () {
-        dailyCUDOS = 1000 * 0.00082;
-        CudosLivePrice = CudosLiveDPrice;
-        dailydolorRate = dailyCUDOS * parseFloat(CudosLivePrice);
-        MonthlyCUDOS = dailyCUDOS * 30.49;
-        MonthlyDolorM = MonthlyCUDOS * parseFloat(CudosLivePrice);
-        v = 365.853 * dailyCUDOS;
-        yeardolorM = v * parseFloat(CudosLivePrice);
-        $(".dailydolorRate").text(dailydolorRate.toFixed(2));
-        $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
-        $(".yeardolorM").text(yeardolorM.toFixed(2));
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
