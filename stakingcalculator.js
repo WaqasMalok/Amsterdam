@@ -1,7 +1,5 @@
  var slider = document.getElementById("myRange");
 		   var output = document.getElementById("demo");
-		//    var count = document.getElementById("count");
-		//    count.innerHTML = mi
 		   output.innerHTML = addCommas(slider.value);
 		   slider.oninput = function() {
 		   output.innerHTML = addCommas(this.value);
