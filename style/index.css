@@ -473,10 +473,7 @@ small {
   padding: 20px 0px;
   max-width: 970px; 
 }
-
-.mk-calculation .mk-yearly-return{
-  width: 100vw;
-}
+ 
 .mk-calculator-inputs{
   border: 1px solid #ffffff2d;
   max-width: 460px;
