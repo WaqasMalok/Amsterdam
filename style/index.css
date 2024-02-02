@@ -79,8 +79,8 @@ HEADING FONT END
 /* ///////////////// NAVIGATION  /////////////////  */
 .mk-nav {
   max-width: 1460px;
-  padding-inline: clamp(5px, 5vw, 77px);
-  padding-block: clamp(5px, 2vw, 25px);
+  padding-inline: clamp(5px, 4vw, 45px);
+  padding-block: clamp(10px, 2vw, 20px);
   margin-top: 24px;
   margin-inline: auto;
   border-radius: 12px;
@@ -92,7 +92,7 @@ HEADING FONT END
   }
 }
 .mk-nav .navbar-brand {
-  max-width: clamp(95px, 13vw, 168px);
+  max-width: clamp(130px, 14vw, 200px);
 }
 .mk-nav .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
@@ -177,7 +177,7 @@ HEADING FONT END
   max-height: 800px;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 /* bg top shadow  */
 .mk-hero-section .mk-bg-shadow {
@@ -550,13 +550,15 @@ small {
 .mk-faq-accordion .accordion-item {
   border-radius: 8px;
   padding: 10px 20px;
-  border: 1px solid #ffffff2e;
-  border-top: 1px solid #ffffff2e !important;
-  border-bottom: 1px solid #ffffff2e !important;
+  border: 1px !important;
+  border-color:  #ffffff2e;
+  border-style: solid !important;
+  /* border-top: 1px solid #ffffff2e !important;
+  border-bottom: 1px solid #ffffff2e !important; */
 }
-/* .accordion-item:focus {
-  box-shadow: inset 2px #ca2c2c;
-} */
+.faq-active{
+  border-color:#1477dafa !important;
+}
 .mk-faq-accordion .accordion-button {
   font-size: clamp(20px, 2vw, 24px);
 }
