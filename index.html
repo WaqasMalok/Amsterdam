@@ -65,8 +65,12 @@
                 <li class="nav-item mb-lg-0 mb-3">
                   <a class="nav-link" href="#mkfaqs">FAQS</a>
                 </li>
-                <button class="btn btn-primary btn-md ms-lg-3" type="submit" >
-                  <a href="https://dashboard.cudos.org" class="text-decoration-none text-white fw-medium">Stake Now</a>
+                <button class="btn btn-primary btn-md ms-lg-3" type="submit">
+                  <a
+                    href="https://dashboard.cudos.org"
+                    class="text-decoration-none text-white fw-medium"
+                    >Stake Now</a
+                  >
                 </button>
               </ul>
             </div>
@@ -83,15 +87,18 @@
 
           <div class="mk-hero-btn">
             <button class="btn btn-primary btn-lg fw-bold" type="submit">
-              <a href="https://dashboard.cudos.org" class="text-decoration-none text-white fw-medium">Stake Now</a>
-              
+              <a
+                href="https://dashboard.cudos.org"
+                class="text-decoration-none text-white fw-medium"
+                >Stake Now</a
+              >
             </button>
-            <button
-              type="email"
-              class="btn btn-outline-primary btn-lg" 
-            >
-            <a href="mailto:landmanmarc@gmail.com " class="text-decoration-none text-white fw-medium">Contact Us</a>
-               
+            <button type="email" class="btn btn-outline-primary btn-lg">
+              <a
+                href="mailto:landmanmarc@gmail.com "
+                class="text-decoration-none text-white fw-medium"
+                >Contact Us</a
+              >
             </button>
           </div>
         </div>
@@ -219,7 +226,8 @@
       <section class="mk-calculator mk-mb-lg position-relative">
         <span class="mk-bg-shadow"></span>
         <!-- header  -->
-        <div id="mk-calculator" 
+        <div
+          id="mk-calculator"
           class="mk-calculator-header text-center mk-mb-sm z-1 position-relative"
         >
           <h3 class="mb-3 text-white mk-heading-3 fw-bold">
@@ -287,13 +295,12 @@
             <div class="mk-stake text-white text-center">
               <p class="">Your CUDOS Stake</p>
               <div
-                class="mk-calculator-inputs d-flex align-items-center m-auto"
+                class="mk-calculator-inputs d-flex justify-content-between align-items-center m-auto"
               >
-                <input class="w-100" type="number" value="1000" />
-
+                <input class="w-100 mk-num" type="number" value="1000" />
                 <div class="d-flex flex-column justify-content-between">
-                  <i class="fa-solid fa-chevron-up mb-1"></i>
-                  <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up mb-1"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
               </div>
             </div>
@@ -341,7 +348,8 @@
       <!-- testing  -->
 
       <!-- FAQS SECTION  -->
-      <section id="mkfaqs"
+      <section
+        id="mkfaqs"
         class="mk-faq mk-mb-lg d-flex flex-column justify-content-center align-items-center z-1 position-relative"
       >
         <span class="mk-bg-shadow"></span>
@@ -361,9 +369,12 @@
             id="accordionFlushExample"
           >
             <!-- accordion item 1 -->
-            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2 mk-top-border faq-active" id="accordion-item-1">
-              <h2 class="accordion-header " onclick="faq1()">
-                <button 
+            <div
+              class="accordion-item text-white pb-2 mb-lg-4 mb-2 mk-top-border faq-active"
+              id="accordion-item-1"
+            >
+              <h2 class="accordion-header" onclick="faq1()">
+                <button
                   class="accordion-button text-white"
                   type="button"
                   data-bs-toggle="collapse"
@@ -393,8 +404,11 @@
               </div>
             </div>
             <!-- accordion item 2 -->
-            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2" id="accordion-item-2">
-              <h2 class="accordion-header"  onclick="faq2()">
+            <div
+              class="accordion-item text-white pb-2 mb-lg-4 mb-2"
+              id="accordion-item-2"
+            >
+              <h2 class="accordion-header" onclick="faq2()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -420,8 +434,11 @@
               </div>
             </div>
             <!-- accordion item 3 -->
-            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2" id="accordion-item-3">
-              <h2 class="accordion-header"  onclick="faq3()">
+            <div
+              class="accordion-item text-white pb-2 mb-lg-4 mb-2"
+              id="accordion-item-3"
+            >
+              <h2 class="accordion-header" onclick="faq3()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -448,8 +465,11 @@
               </div>
             </div>
             <!-- accordion item 4 -->
-            <div class="accordion-item text-white pb-2 mk-bottom-border" id="accordion-item-4">
-              <h2 class="accordion-header"  onclick="faq4()">
+            <div
+              class="accordion-item text-white pb-2 mk-bottom-border"
+              id="accordion-item-4"
+            >
+              <h2 class="accordion-header" onclick="faq4()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -544,8 +564,6 @@
         </p>
       </section>
     </div>
-    <!-- CUSTOM JS FILE  -->
-    <script src="./script.js"></script>
     <!-- Bootstrap FILE  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -555,9 +573,9 @@
     <!-- script faqs  -->
     <script>
       var item1 = document.querySelector("#accordion-item-1"),
-      item2 = document.querySelector("#accordion-item-2"),
-      item3 = document.querySelector("#accordion-item-3"),
-      item4 = document.querySelector("#accordion-item-4");
+        item2 = document.querySelector("#accordion-item-2"),
+        item3 = document.querySelector("#accordion-item-3"),
+        item4 = document.querySelector("#accordion-item-4");
       function faq1() {
         item1.classList.add("faq-active");
         item2.classList.remove("faq-active");
@@ -650,7 +668,8 @@
       console.log(data_num);
     </script>
     <!-- CALCULATOR SCRIPPT  -->
-    <!-- <script>
+   
+   <script>
       var slider = document.getElementById("myRange");
       var output = document.getElementById("demo");
       output.innerHTML = addCommas(slider.value);
@@ -785,7 +804,7 @@
         $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
         $(".yeardolorM").text(yeardolorM.toFixed(2));
       });
-    </script> -->
+    </script> 
 
     <!--
     DEVELOP BY:> MK [WAQAS MALIK]

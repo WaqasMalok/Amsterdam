@@ -547,6 +547,9 @@ small {
   font-size: clamp(15px, 2vw, 20px);
   cursor: pointer;
 }
+.mk-stake .fa-solid:hover{
+  color: #fff;
+}
 .mk-table {
   border-top: 1px solid #ffffff21;
   padding-top: clamp(10px, 4vw, 50px);
