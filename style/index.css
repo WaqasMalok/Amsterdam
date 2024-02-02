@@ -688,18 +688,28 @@ small {
 .mk-footer-logo {
   width: 214px;
 }
-.mk-footer-social-icons {
-  padding: 40px 0px 20px 0px;
+.mk-footer-social-icons { 
+  padding-top: clamp(30px, 4vw, 40px);
+  padding-bottom: clamp(10px, 2vw, 20px);
+  display: flex;
+  justify-content: center;
 }
-.mk-footer-social-icons .icon {
-  padding: 15px;
+.mk-footer-social-icons .icon { 
   border-radius: 50%;
   background-color: #ffffff10;
   margin: 5px;
+  width: clamp(30px, 5vw,50px) ;
+  height: clamp(30px, 5vw,50px) ; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+/* .mk-footer-social-icons .icon .fa-facebook-f{
+  padding: 15px 15px;
+} */
 .mk-footer-social-icons .fa-brands {
   color: #fff;
-  font-size: 20px;
+  font-size: clamp(12px, 2vw, 20px);
   transition: all ease-in-out 0.5s;
 }
 .mk-footer-social-icons .icon:hover {
