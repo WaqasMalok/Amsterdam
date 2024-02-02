@@ -205,7 +205,7 @@ HEADING FONT END
   margin-bottom: 62px;
 }
 .mk-hero-btn button[type=email]{
- text-decoration: none;
+ /* text-decoration: none; */
 }
 .mk-hero-btn .btn {
   margin: 0px 10px;
@@ -229,7 +229,7 @@ HEADING FONT END
   animation-delay: 1s;
 }
 .mk-coins .coin-3 {
-  bottom: 24%;
+  bottom: 30%;
   right: 13%;
   max-width: 156px;
   animation-delay: 3s;
@@ -241,7 +241,7 @@ HEADING FONT END
   animation-delay: 5s;
 }
 .mk-coins .coin-5 {
-  bottom: 5%;
+  bottom: 28%;
   right: 9%;
   max-width: 76px;
   animation-delay: 4s;
@@ -266,6 +266,7 @@ HEADING FONT END
 }
 
 /* COINS RESPONSIVE  */
+/* 576px  */
 @media (max-width: 576px) {
   /* ANIMATION COINS  */
   .mk-coins .coin-1 {
@@ -279,8 +280,8 @@ HEADING FONT END
     max-width: 120px;
   }
   .mk-coins .coin-3 {
-    bottom: 13%;
-    right: 11%;
+    bottom: 20%;
+    right: 5%;
     max-width: 119px;
   }
   .mk-coins .coin-4 {
@@ -289,31 +290,32 @@ HEADING FONT END
     max-width: 220px;
   }
   .mk-coins .coin-5 {
-    bottom: 13%;
+    bottom: 15%;
     right: 2%;
     max-width: 63px;
   }
 }
+/* 420px  */
 @media (max-width: 420px) {
   /* ANIMATION COINS  */
   .mk-coins .coin-1 {
     top: 35%;
-    left: 4%;
+    left: -5%;
   }
   .mk-coins .coin-2 {
     bottom: 11%;
     left: -1%;
   }
   .mk-coins .coin-3 {
-    bottom: 11%;
+    bottom: 27%;
     right: 13%;
   }
   .mk-coins .coin-4 {
-    top: 12%;
+    top: 5%;
     right: 0%;
   }
   .mk-coins .coin-5 {
-    bottom: 13%;
+    bottom: 30%;
     right: 5%;
     max-width: 50px;
   }
