@@ -520,20 +520,27 @@ small {
 } 
 .mk-range input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 32px !important;
-  height: 32px;
-  border: 8px solid #fff;
+  width: clamp(20px, 5vw, 32px );
+  height: clamp(20px, 5vw, 32px );
+  border: 6px solid #fff;
   background-color: #1478da;
   border-radius: 50%;
   cursor: pointer;
 }
 .mk-range input[type=range]{
   -webkit-appearance: none;
-  height: 18px;
+  height: clamp(10px, 2vw, 16px);
   background-color: #1478da;
   border-radius: 8px;
 }
- 
+ @media (max-width:998px){
+  .mk-range input[type=range]::-webkit-slider-thumb { 
+    border: 4px solid #fff;
+  }
+  .mk-range input[type=range]{ 
+    border-radius: 5px;
+  }
+ }
 /* time daily monthly yearly   */
 .mk-stake .fa-solid {
   color: #ffffff48;
