@@ -65,8 +65,8 @@
                 <li class="nav-item mb-lg-0 mb-3">
                   <a class="nav-link" href="#mkfaqs">FAQS</a>
                 </li>
-                <button class="btn btn-primary btn-md ms-lg-3" type="submit">
-                  Stake Now
+                <button class="btn btn-primary btn-md ms-lg-3" type="submit" >
+                  <a href="https://dashboard.cudos.org" class="text-decoration-none text-white fw-medium">Stake Now</a>
                 </button>
               </ul>
             </div>
@@ -83,13 +83,14 @@
 
           <div class="mk-hero-btn">
             <button class="btn btn-primary btn-lg fw-bold" type="submit">
-              Stake Now
+              <a href="https://dashboard.cudos.org" class="text-decoration-none text-white fw-medium">Stake Now</a>
+              
             </button>
             <button
               type="email"
               class="btn btn-outline-primary btn-lg" 
             >
-            <a href="mailto:landmanmarc@gmail.com " class="text-decoration-none text-white fw-bold">Contact Us</a>
+            <a href="mailto:landmanmarc@gmail.com " class="text-decoration-none text-white fw-medium">Contact Us</a>
                
             </button>
           </div>
@@ -362,7 +363,7 @@
           >
             <!-- accordion item  -->
             <div class="accordion-item text-white pb-2 mb-lg-4 mb-2" id="accordion-item-1">
-              <h2 class="accordion-header " id="faq1" onclick="faq1()">
+              <h2 class="accordion-header " onclick="faq1()">
                 <button 
                   class="accordion-button text-white"
                   type="button"
@@ -393,8 +394,8 @@
               </div>
             </div>
             <!-- accordion item  -->
-            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2">
-              <h2 class="accordion-header">
+            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2" id="accordion-item-2">
+              <h2 class="accordion-header"  onclick="faq2()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -420,8 +421,8 @@
               </div>
             </div>
             <!-- accordion item  -->
-            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2">
-              <h2 class="accordion-header">
+            <div class="accordion-item text-white pb-2 mb-lg-4 mb-2" id="accordion-item-3">
+              <h2 class="accordion-header"  onclick="faq3()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -448,8 +449,8 @@
               </div>
             </div>
             <!-- accordion item  -->
-            <div class="accordion-item text-white pb-2">
-              <h2 class="accordion-header">
+            <div class="accordion-item text-white pb-2" id="accordion-item-4">
+              <h2 class="accordion-header"  onclick="faq4()">
                 <button
                   class="accordion-button collapsed text-white"
                   type="button"
@@ -554,10 +555,33 @@
     ></script>
     <!-- script faqs  -->
     <script>
-      var button = document.querySelector("#faq1"),
-        body = document.querySelector("#accordion-item-1");
+      var item1 = document.querySelector("#accordion-item-1"),
+      item2 = document.querySelector("#accordion-item-2"),
+      item3 = document.querySelector("#accordion-item-3"),
+      item4 = document.querySelector("#accordion-item-4");
       function faq1() {
-        body.classList.add("faq-active");
+        item1.classList.add("faq-active");
+        item2.classList.remove("faq-active");
+        item3.classList.remove("faq-active");
+        item4.classList.remove("faq-active");
+      }
+      function faq2() {
+        item1.classList.remove("faq-active");
+        item2.classList.add("faq-active");
+        item3.classList.remove("faq-active");
+        item4.classList.remove("faq-active");
+      }
+      function faq3() {
+        item1.classList.remove("faq-active");
+        item2.classList.remove("faq-active");
+        item3.classList.add("faq-active");
+        item4.classList.remove("faq-active");
+      }
+      function faq4() {
+        item1.classList.remove("faq-active");
+        item2.classList.remove("faq-active");
+        item3.classList.remove("faq-active");
+        item4.classList.add("faq-active");
       }
     </script>
     <!-- script stats  -->
