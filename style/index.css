@@ -25,6 +25,9 @@ html {
   background-image: radial-gradient(closest-side, #1477da36, #050a12);
   position: absolute;
 }
+.mk-section-padding{
+padding-block: clamp(20px, 4vw, 40px);
+}
 /* //////////////////////////////////////////////////// */
 
 /* ########
@@ -201,6 +204,9 @@ HEADING FONT END
   font-size: clamp(30px, 7vw, 100px);
   margin-bottom: 62px;
 }
+.mk-hero-btn button[type=email]{
+ text-decoration: none;
+}
 .mk-hero-btn .btn {
   margin: 0px 10px;
 }
@@ -211,7 +217,7 @@ HEADING FONT END
 }
 /* ANIMATION COINS  */
 .mk-coins .coin-1 {
-  top: 25%;
+  top: 10%;
   left: 18%;
   max-width: 170px;
   animation-delay: 2s;
@@ -223,13 +229,13 @@ HEADING FONT END
   animation-delay: 1s;
 }
 .mk-coins .coin-3 {
-  bottom: -3%;
+  bottom: 24%;
   right: 13%;
   max-width: 156px;
   animation-delay: 3s;
 }
 .mk-coins .coin-4 {
-  top: 15%;
+  top: 5%;
   right: 5%;
   max-width: 250px;
   animation-delay: 5s;
