@@ -107,6 +107,8 @@ HEADING FONT END
 .mk-nav .offcanvas-end {
   background-color: #050a12;
   border-left: 1px solid #1478da;
+  border-bottom: 1px solid #1478da;
+  border-bottom-left-radius: 50px;
 }
 
 /* NAVIGATION BAR BUGGER  */
@@ -147,6 +149,13 @@ HEADING FONT END
 }
 .mk-nav .navbar .show {
   padding: 20px;
+  height: 90vh;
+  min-height: 700px;
+}
+@media (max-width: 420px){
+  .mk-nav .navbar .show {
+    width: 80vw;
+  }
 }
 .mk-nav .navbar .show .btn-close {
   background-image: none;
