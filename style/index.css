@@ -698,8 +698,8 @@ small {
   border-radius: 50%;
   background-color: #ffffff10;
   margin: 5px;
-  width: clamp(30px, 5vw,50px) ;
-  height: clamp(30px, 5vw,50px) ; 
+  width: clamp(40px, 5vw,50px) ;
+  height: clamp(40px, 5vw,50px) ; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -709,7 +709,7 @@ small {
 } */
 .mk-footer-social-icons .fa-brands {
   color: #fff;
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(15px, 2vw, 20px);
   transition: all ease-in-out 0.5s;
 }
 .mk-footer-social-icons .icon:hover {
