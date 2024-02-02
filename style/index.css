@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+/* helpper class  */
 .mk-amsterdam {
   background-color: #050a12;
   max-width: 1920px;
@@ -27,6 +28,12 @@ html {
 }
 .mk-section-padding{
 padding-block: clamp(20px, 4vw, 40px);
+}
+.mk-top-border{
+  border-top: 1px solid #ffffff38 !important;
+}
+.mk-bottom-border{
+  border-bottom: 1px solid #ffffff38 !important;
 }
 /* //////////////////////////////////////////////////// */
 
@@ -203,10 +210,7 @@ HEADING FONT END
 .mk-hero-title {
   font-size: clamp(30px, 7vw, 100px);
   margin-bottom: 62px;
-}
-.mk-hero-btn button[type=email]{
- /* text-decoration: none; */
-}
+} 
 .mk-hero-btn .btn {
   margin: 0px 10px;
 }
@@ -566,15 +570,11 @@ small {
 .mk-faq-accordion .accordion-item {
   border-radius: 8px;
   padding: 10px 20px;
-  border: 1px !important;
-  border-color:  #ffffff2e;
-  border-style: solid !important;
-  /* border-top: 1px solid #ffffff2e !important;
-  border-bottom: 1px solid #ffffff2e !important; */
+  border: 1px solid #ffffff38;
 }
 .faq-active{
-  border-color:#1477dafa !important;
-}
+  border-color:#1477da80 !important;
+} 
 .mk-faq-accordion .accordion-button {
   font-size: clamp(20px, 2vw, 24px);
 }
@@ -587,7 +587,7 @@ small {
 }
 .mk-faq-accordion .accordion-button:not(.collapsed) {
   box-shadow: none;
-  border-bottom: 1px solid #ffffff25;
+  border-bottom: 1px solid #476b8f8f;
 }
 .mk-faq-accordion .accordion-body {
   padding-left: 57px !important;
