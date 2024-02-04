@@ -477,6 +477,13 @@ padding-bottom: clamp(10px, 3vw, 30px);
   padding: clamp(20px, 4vw, 65px);
   background-color: #1519214b !important;
 }
+.mk-calculator::before{
+  content: "";
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+}
 .mk-calculator-body p {
   font-size: clamp(15px, 2vw, 20px);
 }
@@ -573,6 +580,13 @@ padding-bottom: clamp(10px, 3vw, 30px);
 
 .mk-faq {
   padding: 40px 10px 10px 10px;
+}
+.mk-faq::before{
+  content: "";
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
 }
 .mk-faq-container {
   max-width: 900px;
