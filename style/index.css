@@ -200,6 +200,14 @@ HEADING FONT END
   justify-content: center;
   align-items: center;
 }
+.mk-hero-section::before{
+  content: "";
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
+  position: absolute;
+  top: -50%;
+  width: 90vw;
+  height: 90vh;
+}
 /* bg top shadow  */
 .mk-hero-section .mk-bg-shadow {
   top: -60%;
