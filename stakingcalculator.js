@@ -139,6 +139,11 @@ var slider = document.getElementById("myRange");
 
     });
 	
+	
+	 
+	
+		
+		
     $(document ).ready(function() { 
         dailyCUDOS = 1000*0.00082;
 		CudosLivePrice = CudosLiveDPrice;

@@ -9,9 +9,6 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  background-color: #050a12;
-}
 /* helpper class  */
 .mk-amsterdam {
   background-color: #050a12;
@@ -431,11 +428,6 @@ small {
 }
 
 /* //////////////// OUR MISSION ///////////////////  */
-.mk-mission{
-  background-color: #ffffff0a;
-padding-top: clamp(10px, 3vw, 30px);
-padding-bottom: clamp(10px, 3vw, 30px);
-}
 .mk-mission-body {
   max-width: 1350px;
   padding: 0px 20px;
