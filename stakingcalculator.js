@@ -1,4 +1,4 @@
- var slider = document.getElementById("myRange");
+var slider = document.getElementById("myRange");
 		   var output = document.getElementById("demo");
 		   output.innerHTML = addCommas(slider.value);
 		   slider.oninput = function() {
@@ -111,8 +111,8 @@
 		    $("#errormsg").text('');
 		    v = 365.853*dailyCUDOS;
 			$(".yearlyCUDOS").text(v.toFixed(2));
-			
-			 currencyType =  $(".currency-con.active").data("currency")
+
+			 currencyType =  $("#select option:selected").data("currency")
 		  
 			if(currencyType == "USD")
 			{  
@@ -135,7 +135,8 @@
 		          $(".MonthlyDolorM").text(MonthlyDolorM.toFixed(2));
 		          $(".yeardolorM").text(yeardolorM.toFixed(2));
 	   }
-	   
+	   console.log("Selected Currency:", selectedCurrency);
+
     });
 	
 	
