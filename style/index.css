@@ -696,6 +696,13 @@ padding-bottom: clamp(10px, 3vw, 30px);
 .mk-footer {
   border-top: 1px solid #1477da63;
 }
+.mk-footer::before{
+  content: "";
+  background-image: radial-gradient(closest-side, #1477da36, #050a12);
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+}
 .mk-footer-content {
   max-width: 660px;
   padding: 50px 0px 20px 0px;
