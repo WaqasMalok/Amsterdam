@@ -654,6 +654,7 @@ padding-bottom: clamp(10px, 3vw, 30px);
   background-color: #ffffff10;
   padding: 90px 45px;
 }
+
 .mk-follow-title {
   max-width: 682px;
 }
@@ -695,6 +696,7 @@ padding-bottom: clamp(10px, 3vw, 30px);
 /* ################################## MK FOOTER SECTION ###########################  */
 .mk-footer {
   border-top: 1px solid #1477da63;
+  overflow: hidden;
 }
 .mk-footer::before{
   content: "";
